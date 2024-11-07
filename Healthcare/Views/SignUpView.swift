@@ -73,28 +73,29 @@ struct SignupView: View {
         }
     }
 
-//    func signUpWithGoogle() {
-//        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-//
-//        let config = GIDConfiguration(clientID: clientID)
-//        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { user, error in
-//            if let error = error {
-//                errorMessage = error.localizedDescription
-//                return
-//            }
-//
-//            guard let authentication = user?.authentication, let idToken = authentication.idToken else { return }
-//            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
-//
-//            Auth.auth().signIn(with: credential) { authResult, error in
-//                if let error = error {
-//                    errorMessage = error.localizedDescription
-//                } else {
-//                    print("Successfully signed up with Google")
-//                }
-//            }
-//        }
-//    }
+    func signUpWithGoogle() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { result, error in
+            if let error = error {
+                errorMessage = error.localizedDescription
+                return
+            }
+            
+            guard let user = result?.user,
+                let idToken = user.idToken?.tokenString else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    errorMessage = error.localizedDescription
+                } else {
+                    print("Successfully signed up with Google")
+                }
+            }
+        }
+    }
 
     func getRootViewController() -> UIViewController {
         guard let window = UIApplication.shared.windows.first else {

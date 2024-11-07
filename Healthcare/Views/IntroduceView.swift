@@ -33,8 +33,8 @@ struct IntroduceView: View {
                 }
                 .padding()
                 NavigationLink(destination: LoginView(), isActive: $navigateToLogin) {
-                                    EmptyView()
-                                }
+                    EmptyView()
+                }
                 
             }.frame(maxWidth: .infinity)
         }

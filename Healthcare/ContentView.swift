@@ -9,21 +9,25 @@ import Lottie
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var appState = AppState()
+    @StateObject private var appState = AppState()
+    
+    var body: some View {
+        HomeView()
 
-  var body: some View {
-    NavigationView {
-      if appState.isReadIntroduce {
-        LoginView()
-          .environmentObject(appState)
-      } else {
-        IntroduceView()
-          .environmentObject(appState)
-      }
+//        Group {
+//            if appState.isUserLoggedIn {
+//                HomeView()
+//            } else {
+//                if appState.isReadIntroduce {
+//                    LoginView()
+//                } else {
+//                    IntroduceView()
+//                }
+//                
+//            }
+//        }
     }
-  }
 }
-
 #Preview {
-  ContentView()
+    ContentView()
 }
