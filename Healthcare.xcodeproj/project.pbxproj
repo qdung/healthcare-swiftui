@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D180F0CA2CDCCCC30069B2EA /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0C92CDCCCC30069B2EA /* ForgotPasswordView.swift */; };
 		D180F0CE2CDCF3E10069B2EA /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0CD2CDCF3E10069B2EA /* CustomSlider.swift */; };
+		D180F0D02CDDD3190069B2EA /* BiographyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0CF2CDDD3190069B2EA /* BiographyView.swift */; };
+		D180F0D22CDDDB560069B2EA /* RadioGroupRadioGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0D12CDDDB560069B2EA /* RadioGroupRadioGroupButton.swift */; };
+		D180F0D42CDDE1A10069B2EA /* SelectWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0D32CDDE1A10069B2EA /* SelectWeightView.swift */; };
+		D180F0D62CDDF27B0069B2EA /* RulerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0D52CDDF27B0069B2EA /* RulerSlider.swift */; };
+		D180F0D82CDDF3830069B2EA /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0D72CDDF3830069B2EA /* CircularSlider.swift */; };
+		D180F0DA2CDF975F0069B2EA /* SelectHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180F0D92CDF975F0069B2EA /* SelectHeightView.swift */; };
 		D1D5444E2CD9C3F700F6B04A /* HealthcareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5444D2CD9C3F700F6B04A /* HealthcareApp.swift */; };
 		D1D544502CD9C3F700F6B04A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5444F2CD9C3F700F6B04A /* ContentView.swift */; };
 		D1D544522CD9C3F900F6B04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D544512CD9C3F900F6B04A /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 		D180F0C82CDCC66C0069B2EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D180F0C92CDCCCC30069B2EA /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		D180F0CD2CDCF3E10069B2EA /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		D180F0CF2CDDD3190069B2EA /* BiographyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyView.swift; sourceTree = "<group>"; };
+		D180F0D12CDDDB560069B2EA /* RadioGroupRadioGroupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroupRadioGroupButton.swift; sourceTree = "<group>"; };
+		D180F0D32CDDE1A10069B2EA /* SelectWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeightView.swift; sourceTree = "<group>"; };
+		D180F0D52CDDF27B0069B2EA /* RulerSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerSlider.swift; sourceTree = "<group>"; };
+		D180F0D72CDDF3830069B2EA /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		D180F0D92CDF975F0069B2EA /* SelectHeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeightView.swift; sourceTree = "<group>"; };
 		D1D5444A2CD9C3F700F6B04A /* Healthcare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthcare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D5444D2CD9C3F700F6B04A /* HealthcareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthcareApp.swift; sourceTree = "<group>"; };
 		D1D5444F2CD9C3F700F6B04A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +151,9 @@
 			children = (
 				D1D5445E2CD9D8E000F6B04A /* Header.swift */,
 				D180F0CD2CDCF3E10069B2EA /* CustomSlider.swift */,
+				D180F0D12CDDDB560069B2EA /* RadioGroupRadioGroupButton.swift */,
+				D180F0D52CDDF27B0069B2EA /* RulerSlider.swift */,
+				D180F0D72CDDF3830069B2EA /* CircularSlider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -159,6 +174,9 @@
 				D1D544682CD9F0C400F6B04A /* HomeView.swift */,
 				D1D5446D2CDA33B700F6B04A /* IntroduceView.swift */,
 				D1D5448F2CDB8F9A00F6B04A /* SignUpView.swift */,
+				D180F0CF2CDDD3190069B2EA /* BiographyView.swift */,
+				D180F0D32CDDE1A10069B2EA /* SelectWeightView.swift */,
+				D180F0D92CDF975F0069B2EA /* SelectHeightView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,12 +274,18 @@
 			files = (
 				D1D544932CDBA39000F6B04A /* Styles.swift in Sources */,
 				D1D544672CD9F0A700F6B04A /* LoginView.swift in Sources */,
+				D180F0D02CDDD3190069B2EA /* BiographyView.swift in Sources */,
 				D1D544692CD9F0C400F6B04A /* HomeView.swift in Sources */,
 				D1D544622CD9DA7E00F6B04A /* User.swift in Sources */,
+				D180F0DA2CDF975F0069B2EA /* SelectHeightView.swift in Sources */,
+				D180F0D82CDDF3830069B2EA /* CircularSlider.swift in Sources */,
+				D180F0D42CDDE1A10069B2EA /* SelectWeightView.swift in Sources */,
 				D1D544702CDA3B2900F6B04A /* AppState.swift in Sources */,
 				D1D544502CD9C3F700F6B04A /* ContentView.swift in Sources */,
+				D180F0D22CDDDB560069B2EA /* RadioGroupRadioGroupButton.swift in Sources */,
 				D1D5445F2CD9D8E000F6B04A /* Header.swift in Sources */,
 				D1D544902CDB8F9A00F6B04A /* SignUpView.swift in Sources */,
+				D180F0D62CDDF27B0069B2EA /* RulerSlider.swift in Sources */,
 				D1D544642CD9F05200F6B04A /* LoginViewModel.swift in Sources */,
 				D1D5446E2CDA33B700F6B04A /* IntroduceView.swift in Sources */,
 				D180F0CE2CDCF3E10069B2EA /* CustomSlider.swift in Sources */,
@@ -409,7 +433,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +468,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -14,7 +14,7 @@ struct HomeView:View {
         VStack(spacing:15){
             Rectangle()
                 .fill(Color.blue)
-                .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                .frame(height: 100)
             
             Spacer(minLength: 0)
             Text("Weight")

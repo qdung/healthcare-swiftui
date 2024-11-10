@@ -3,8 +3,8 @@ import SwiftUI
 struct Header: View {
     var title: String
     var showBackButton: Bool
-    var actionButtonTitle: String
-    var actionButtonAction: () -> Void
+    var actionButtonTitle: String?
+    var actionButtonAction: (() -> Void)?
     var backButtonAction: (() -> Void)?
     
     @Environment(\.presentationMode) var presentationMode
@@ -30,9 +30,9 @@ struct Header: View {
                 Spacer()
                 
                 Button(action: {
-                    actionButtonAction()
+                    actionButtonAction!()
                 }) {
-                    Text(actionButtonTitle)
+                    Text(actionButtonTitle!)
                         .foregroundColor(.blue)
                     
                 }

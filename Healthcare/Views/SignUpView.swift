@@ -40,7 +40,6 @@ struct SignupView: View {
                         .cornerRadius(8)
                 }
                 .padding()
-
                 Button(action: {
 //                    signUpWithGoogle()
                     print("Hello")
@@ -75,14 +74,11 @@ struct SignupView: View {
 
     func signUpWithGoogle() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-
-        let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { result, error in
             if let error = error {
                 errorMessage = error.localizedDescription
                 return
             }
-            
             guard let user = result?.user,
                 let idToken = user.idToken?.tokenString else { return }
             let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
